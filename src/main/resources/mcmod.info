@@ -1,0 +1,16 @@
+[
+{
+  "modid": "llc",
+  "name": "LLC First Mod",
+  "description": "This is the first mod which is created by liangliangche.",
+  "version": "1.0",
+  "mcversion": "1.12",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["liangliangche"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

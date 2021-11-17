@@ -1,8 +1,10 @@
 package com.liangliangche.firstmod.util.handlers;
 
+import com.liangliangche.firstmod.Init.ModBlocks;
 import com.liangliangche.firstmod.Init.ModItems;
 import com.liangliangche.firstmod.util.IHasModel;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -15,13 +17,22 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegistryHandler {
-	//ÊÂ¼ş¼àÌı£¬forge×Ô¶¯µ÷ÓÃÔØÈëÎïÆ·
+	//äº‹ä»¶ç›‘å¬ï¼Œforgeè‡ªåŠ¨è°ƒç”¨è½½å…¥ç‰©å“
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
 	}
-	//ÊÂ¼ş¼àÌı£¬Ä£×é×¢²áÊ±ºòµ÷ÓÃ
+	
+	@SubscribeEvent
+	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
+		
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+	}
+		
+
+	//äº‹ä»¶ç›‘å¬ï¼Œæ¨¡ç»„æ³¨å†Œæ—¶å€™è°ƒç”¨
+
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 		
@@ -29,6 +40,13 @@ public class RegistryHandler {
 			if(item instanceof IHasModel) {
 				
 				((IHasModel)item).registerModels();
+			}
+		}
+		
+		for (Block block : ModBlocks.BLOCKS) {
+			if(block instanceof IHasModel) {
+				
+				((IHasModel)block).registerModels();
 			}
 		}
 	}

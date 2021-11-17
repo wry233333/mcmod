@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegistryHandler {
-	
+	//事件监听，forge自动调用载入物品
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		
@@ -30,6 +30,9 @@ public class RegistryHandler {
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	}
 		
+
+	//事件监听，模组注册时候调用
+
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 		

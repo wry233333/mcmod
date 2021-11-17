@@ -1,5 +1,6 @@
 package com.liangliangche.firstmod.util;
 
+//ÒÀÀµµÄ×Ö·û´®
 public class Ref {
 	public static final String MOD_ID = "llc";
 	public static final String NAME = "LLCfirstmod";

@@ -1,8 +1,10 @@
 package com.liangliangche.firstmod.util.handlers;
 
+import com.liangliangche.firstmod.Init.ModBlocks;
 import com.liangliangche.firstmod.Init.ModItems;
 import com.liangliangche.firstmod.util.IHasModel;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -21,6 +23,12 @@ public class RegistryHandler {
 		
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
 	}
+	
+	@SubscribeEvent
+	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
+		
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+	}
 		
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
@@ -29,6 +37,13 @@ public class RegistryHandler {
 			if(item instanceof IHasModel) {
 				
 				((IHasModel)item).registerModels();
+			}
+		}
+		
+		for (Block block : ModBlocks.BLOCKS) {
+			if(block instanceof IHasModel) {
+				
+				((IHasModel)block).registerModels();
 			}
 		}
 	}

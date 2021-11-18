@@ -12,13 +12,14 @@ import net.minecraft.item.ItemStack;
 
 public class ItemBase extends Item implements IHasModel {
 	//��Ʒ��������
-	public ItemBase(String name) {
+	public ItemBase(String name, CreativeTabs tab) {
 		//������Ʒ����
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		//������Ʒ���λ��
-		setCreativeTab(wry333);
-		//��mod��Ʒ�������Ʒ
+		//������Ʒ���λ��
+		setCreativeTab(tab);
+
+		//��mod��Ʒ��������
 		ModItems.ITEMS.add(this);
 	}
 	//����һ������ģʽ����Ʒ��

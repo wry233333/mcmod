@@ -1,8 +1,10 @@
 package com.liangliangche.firstmod;
 
 import com.liangliangche.firstmod.proxy.CommonProxy;
+import com.liangliangche.firstmod.tabs.modtab1;
 import com.liangliangche.firstmod.util.Ref;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -34,4 +36,6 @@ public class Main {
 	public static void PostInit(FMLPostInitializationEvent event) {
 		
 	}
+	
+	public static CreativeTabs MOD_TAB1 = new modtab1();
 }

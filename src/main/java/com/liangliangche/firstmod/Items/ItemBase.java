@@ -11,27 +11,27 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class ItemBase extends Item implements IHasModel {
-	//ÎïÆ·´´½¨·½·¨
+	//ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public ItemBase(String name) {
-		//ÉèÖÃÎïÆ·Ãû³Æ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		//ÉèÖÃÎïÆ·´æ·ÅÎ»ÖÃ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 		setCreativeTab(wry333);
-		//ÏòmodÎïÆ·ÀïÌí¼ÓÎïÆ·
+		//ï¿½ï¿½modï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·
 		ModItems.ITEMS.add(this);
 	}
-	//´´½¨Ò»¸ö´´ÔìÄ£Ê½µÄÎïÆ·À¸
+	//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½
 	public static final CreativeTabs wry333 = new CreativeTabs("JBMod") {
 
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Items.DIAMOND);
+			return new ItemStack(ModItems.Big_Shield_Battery);
 		}
 	};
 	@Override
 	public void registerModels() {
-		//Ê¹ÓÃ´úÀí×¢²á
+		//Ê¹ï¿½Ã´ï¿½ï¿½ï¿½×¢ï¿½ï¿½
 		Main.proxy.registerItemRenderer(this, 0 ,"inventory");
 
 	}

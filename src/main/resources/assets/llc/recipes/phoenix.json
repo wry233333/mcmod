@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "ABA",
+        "LSL",
+        "ABA"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "llc:small_shield_battery"
+        },
+        "S":
+        {
+            "item": "llc:big_shield_battery"
+        },
+        "A":
+        {
+            "item": "llc:small_yao"
+        },
+        "L":
+        {
+            "item": "llc:big_yao"
+        }
+    },
+    
+    "result":
+    {
+        "item": "llc:phoenix",
+        "count": 1
+    }
+}

@@ -1,7 +1,13 @@
+//items
 item.small_shield_battery.name=Small Shield battery
 item.big_shield_battery.name=Big Shield battery
 item.big_yao.name=Big Yao
 item.small_yao.name=small Yao
 item.phoenix.name=Phoenix
 itemGroup.JBMod=JBMod
+
+//blocks
 tile.first_block.name=First Block
+
+//tabs
+itemGroup.mod_tab1_block=JbMod first tab

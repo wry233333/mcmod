@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "llc:first_block" }
+  }
+}

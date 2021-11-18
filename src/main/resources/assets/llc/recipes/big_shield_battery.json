@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " B ",
+        " B ",
+        " B "
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "llc:small_shield_battery"
+        }
+    },
+    
+    "result":
+    {
+        "item": "llc:big_shield_battery",
+        "count": 1
+    }
+}

@@ -1,5 +1,6 @@
 package com.liangliangche.firstmod;
 
+import com.liangliangche.firstmod.Init.ModRecipes;
 import com.liangliangche.firstmod.proxy.CommonProxy;
 import com.liangliangche.firstmod.tabs.modtab1;
 import com.liangliangche.firstmod.util.Ref;
@@ -29,6 +30,8 @@ public class Main {
 	
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
+		
+		ModRecipes.init();
 		
 	}
 	

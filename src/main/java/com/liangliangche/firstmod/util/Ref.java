@@ -8,4 +8,6 @@ public class Ref {
 	public static final String ACCEPTED_VERSIONS = "[1.12]";
 	public static final String CLIENT_PROXY_CLASS = "com.liangliangche.firstmod.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.liangliangche.firstmod.proxy.CommonProxy";
+	
+	public static final int ENTITY_OBSIDIAN_SLIME = 120;
 }

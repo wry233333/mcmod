@@ -9,12 +9,12 @@ import com.liangliangche.firstmod.Items.ItemBase;
 import net.minecraft.item.Item;
 
 public class ModItems {
-	//Ìí¼ÓÎïÆ·µÄÊý×é
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static final List<Item> ITEMS = new ArrayList<Item>();
-	//ÐÂ½¨µÄÊý×é
-	public static final Item Small_Shield_Battery = new ItemBase("small_shield_battery",Main.MOD_TAB1);
-	public static final Item Big_Shield_Battery = new ItemBase("big_shield_battery",Main.MOD_TAB1);
-	public static final Item Big_Yao = new ItemBase("big_yao",Main.MOD_TAB1);
-	public static final Item Small_Yao = new ItemBase("small_yao",Main.MOD_TAB1);
-	public static final Item Phoenix = new ItemBase("phoenix",Main.MOD_TAB1);
+	//ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	public static final Item Small_Shield_Battery = new ItemBase("small_shield_battery",ItemBase.wry333);
+	public static final Item Big_Shield_Battery = new ItemBase("big_shield_battery",ItemBase.wry333);
+	public static final Item Big_Yao = new ItemBase("big_yao",ItemBase.wry333);
+	public static final Item Small_Yao = new ItemBase("small_yao",ItemBase.wry333);
+	public static final Item Phoenix = new ItemBase("phoenix",ItemBase.wry333);
 }

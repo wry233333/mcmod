@@ -10,7 +10,7 @@ public class modtab1 extends CreativeTabs{
 	
 	public modtab1() {
 		
-		super("mod_tab1_block");
+		super("JBMod");
 		
 	}
 
